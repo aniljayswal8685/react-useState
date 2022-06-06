@@ -12,11 +12,15 @@ export default function App() {
   function decrement(){
     setTest(test-1)
   }
+  function reset(){
+    setTest(0)
+  }
   return (
     <div>
       <button onClick={increment}>+</button> 
       <div> {test}</div>
       <button onClick={decrement}>-</button>
+      <button onClick={reset}>Reset</button>
 
     </div>
   );
